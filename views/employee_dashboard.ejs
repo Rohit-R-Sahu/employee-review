@@ -2,15 +2,20 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Assigned reviews -->
-    <div class="col-md-12 col-lg-7 my-2">
-      <h1 class="text-center">Assigned reviews</h1>
+    <div class="col-md-12 col-lg-7 my-2" style="width: 80%">
+      <h1 class="text-center" style="color: rgb(255, 255, 255)">
+        Assigned reviews
+      </h1>
       <div class="d-flex justify-content-center align-items-center">
         <div
           class="d-flex flex-wrap justify-content-center justify-content-lg-start ms-lg-4"
           style="width: 100%"
         >
           <% for(review of assignedReviews) {%>
-          <div class="col-8 col-lg-5 p-2 m-3 rounded shadow">
+          <div
+            class="col-8 col-lg-5 p-2 m-3 rounded shadow"
+            style="background-color: lightslategray; width: 30%"
+          >
             <form
               action="/review/create/<%=employee._id%>"
               class="d-flex flex-column"
@@ -53,12 +58,20 @@
     </div>
 
     <!-- Feedbacks given by others -->
-    <div class="col-12 col-lg-5 my-2">
-      <h1 class="text-center">Feedbacks by others</h1>
+    <div class="col-12 col-lg-5 my-2" style="width: 80%">
+      <h1 class="text-center" style="color: rgb(255, 255, 255)">
+        Feedbacks by others
+      </h1>
 
-      <div class="d-flex flex-column justify-content-center align-items-center">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="height: auto"
+      >
         <% for (review of reviewsFromOthers) {%>
-        <div class="p-2 border rounded my-2" style="width: 80%">
+        <div
+          class="p-2 border rounded my-2"
+          style="width: 80%; background-color: lightslategray"
+        >
           <dl>
             <dt class="fw-semibold">
               Reviewer:

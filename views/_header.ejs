@@ -1,14 +1,9 @@
-<nav class="navbar navbar-expand-md nav-light" style="background: #a1bbdb">
+<nav class="navbar navbar-expand-md nav-light" style="background: #022550">
   <div class="container-fluid">
     <a class="navbar-brand me-lg-5" href="/">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/2631/2631389.png"
-        alt="Logo"
-        width="35"
-        height="35"
-        class="d-inline-block align-text-top"
-      />
-      <span class="text-center fw-semibold">Employee Review System</span>
+      <span class="text-center fw-bold" style="font: 2em sans-serif; color: azure"
+        >Employee Review System</span
+      >
     </a>
 
     <button
@@ -27,7 +22,7 @@
       <% if(locals.user) {%>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
         <li class="nav-item ms-lg-4">
-          <a class="nav-link fw-semibold" aria-current="page" href="/"
+          <a class="nav-link fw-semibold" style="color: white;" aria-current="page" href="/"
             ><i class="fa-solid fa-house"></i> Home</a
           >
         </li>
@@ -37,6 +32,7 @@
             class="nav-link fw-semibold"
             aria-current="page"
             href="/add-employee"
+            style="color: white; font-size: larger;"
             ><i class="fa-solid fa-plus"></i> Add employee</a
           >
         </li>
@@ -44,7 +40,7 @@
       </ul>
 
       <form class="d-flex justify-content-end right-0">
-        <div class="btn btn-warning rounded-pill fw-semibold">
+        <div class="btn btn-warning rounded-pill fw-semibold" style="color: rgb(18, 6, 68);">
           <i class="fa-solid fa-user"></i> <%= user.username %>
         </div>
         <a

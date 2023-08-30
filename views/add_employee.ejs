@@ -1,9 +1,10 @@
 <% if(locals.user && locals.user.role === 'admin') {%>
-<div class="d-flex justify-content-center p-4 p-md-0">
+<div class="d-flex justify-content-center p-4 p-md-0" style=" height: 90vh;">
   <form
     class="rounded p-3 col-12 col-md-4 mt-4 shadow-lg"
     action="/create-employee"
     method="POST"
+    style="height: 75vh; background-color: lightslategray;"
   >
     <h3 class="mb-3 text-center">Add an employee</h3>
 
